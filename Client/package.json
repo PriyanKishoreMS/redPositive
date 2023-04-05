@@ -1,0 +1,32 @@
+{
+  "name": "redpositive",
+  "version": "1.0.0",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "build:tailwind": "tailwindcss --input input.css --output tailwind.css --no-autoprefixer && tailwind-rn",
+    "dev:tailwind": "concurrently \"tailwindcss --input input.css --output tailwind.css --no-autoprefixer --watch\" \"tailwind-rn --watch\""
+  },
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.3",
+    "expo": "~48.0.10",
+    "expo-status-bar": "~1.4.4",
+    "react": "18.2.0",
+    "react-native": "0.71.6",
+    "react-redux": "^8.0.5",
+    "twrnc": "^3.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.0",
+    "@types/react": "~18.0.14",
+    "@types/react-native": "^0.71.5",
+    "concurrently": "^8.0.1",
+    "postcss": "^8.4.21",
+    "tailwindcss": "^3.3.1",
+    "typescript": "^4.9.5"
+  },
+  "private": true
+}
