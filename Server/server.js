@@ -6,7 +6,7 @@ app.use(express.json());
 const PORT = 6969 || process.env.PORT;
 
 app.get("/", (req, res) => {
-	res.json({ msg: "shut the fuck up da" });
+	res.json({ msg: "Hello" });
 });
 
 app.use("/api/mail", mailer);

@@ -118,7 +118,6 @@ const FormScreen = () => {
 								<Text style={tw`text-gray-600`}>Name</Text>
 								<TextInput
 									style={tw`border-b border-gray-300 bg-white rounded-md p-2 mt-1 shadow-md py-2`}
-									//placeholder funny name
 									placeholder='Brad Pitt'
 									value={form.name}
 									onChangeText={text => setForm({ ...form, name: text })}
